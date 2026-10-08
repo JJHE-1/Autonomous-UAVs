@@ -1,0 +1,130 @@
+{
+  "review_date": "2026-10-08",
+  "status": "pass",
+  "tests_run": 22,
+  "tests_failed": 0,
+  "python_files_compiled": [
+    "examples/edge_budget.py",
+    "examples/next_view.py",
+    "import_into_repo.py",
+    "tests/test_examples.py",
+    "tests/test_importer.py",
+    "tools/validate_bundle.py"
+  ],
+  "example_cli_runs": {
+    "edge_budget": "pass",
+    "next_view": "pass"
+  },
+  "example_outputs": {
+    "edge_budget": {
+      "evidence_class": "educational_calculation_not_measurement",
+      "parameters": 513920,
+      "bits_per_parameter": 8,
+      "ideal_parameter_bytes": 513920,
+      "ideal_parameter_MiB": 0.4901123046875,
+      "stage_assumptions_ms": {
+        "sensor": 30.0,
+        "preprocessing": 8.0,
+        "compute": 20.0,
+        "transport": 5.0,
+        "actuation_wait": 10.0
+      },
+      "serial_response_assumption_ms": 73.0,
+      "speed_assumption_mps": 0.5,
+      "deceleration_assumption_mps2": 1.0,
+      "margin_assumption_m": 0.15,
+      "simplified_distance_m": 0.3115,
+      "peak_runtime_ram_bytes": null,
+      "board_fit_verified": false,
+      "warning": "No exported model or board was tested. Parameters exclude activation/runtime memory. Timings are synthetic; pipelining is omitted. The distance assumes fixed delay and constant 1D deceleration toward a static obstacle; it is not a safe-flight clearance or a verified speed limit.",
+      "default_architecture_parameter_breakdown": {
+        "conv_1": 128,
+        "conv_2": 18432,
+        "conv_3": 73728,
+        "image_projection": 196608,
+        "observation_projection_with_bias": 1920,
+        "gru_input_and_hidden_weights": 221184,
+        "gru_two_bias_vectors": 1152,
+        "action_projection": 768
+      }
+    },
+    "next_view": {
+      "evidence_class": "synthetic_teaching_example",
+      "prior_variance": 1.0,
+      "cost_weight_nats_per_cost_unit": 0.2,
+      "candidates": [
+        {
+          "name": "A_precise_but_often_invalid",
+          "noise_variance": 0.04,
+          "p_valid": 0.2,
+          "travel_cost": 1.0,
+          "information_if_valid_nats": 1.629048269010741,
+          "posterior_variance_if_valid": 0.038461538461538464,
+          "expected_information_nats": 0.3258096538021482,
+          "cost_penalty_nats": 0.2,
+          "utility": 0.1258096538021482
+        },
+        {
+          "name": "B_reliable_balanced",
+          "noise_variance": 0.2,
+          "p_valid": 0.95,
+          "travel_cost": 0.4,
+          "information_if_valid_nats": 0.8958797346140275,
+          "posterior_variance_if_valid": 0.16666666666666666,
+          "expected_information_nats": 0.851085747883326,
+          "cost_penalty_nats": 0.08000000000000002,
+          "utility": 0.771085747883326
+        },
+        {
+          "name": "C_nearby_but_noisy",
+          "noise_variance": 0.6,
+          "p_valid": 0.99,
+          "travel_cost": 0.1,
+          "information_if_valid_nats": 0.4904146265058631,
+          "posterior_variance_if_valid": 0.37499999999999994,
+          "expected_information_nats": 0.48551048024080445,
+          "cost_penalty_nats": 0.020000000000000004,
+          "utility": 0.46551048024080444
+        }
+      ],
+      "best_by_information_alone": "A_precise_but_often_invalid",
+      "best_by_utility": "B_reliable_balanced",
+      "warning": "Validity probabilities are assumed, not learned or calibrated. Selection ignores feasibility and inter-view correlations. No control command, global position or safe trajectory is produced."
+    }
+  },
+  "external_navigation_builds_run": false,
+  "model_conversion_run": false,
+  "hardware_or_flight_tests_run": false,
+  "github_upload_performed": false,
+  "test_output": "test_empty_stages (test_examples.BudgetTests.test_empty_stages) ... ok\ntest_fp32_storage (test_examples.BudgetTests.test_fp32_storage) ... ok\ntest_invalid_input (test_examples.BudgetTests.test_invalid_input) ... ok\ntest_invalid_parameters (test_examples.BudgetTests.test_invalid_parameters) ... ok\ntest_parameter_count (test_examples.BudgetTests.test_parameter_count) ... ok\ntest_parameter_dimension_change (test_examples.BudgetTests.test_parameter_dimension_change) ... ok\ntest_storage (test_examples.BudgetTests.test_storage) ... ok\ntest_zero_deceleration (test_examples.BudgetTests.test_zero_deceleration) ... ok\ntest_invalid_probability (test_examples.NextViewTests.test_invalid_probability) ... ok\ntest_invalid_variance (test_examples.NextViewTests.test_invalid_variance) ... ok\ntest_negative_cost (test_examples.NextViewTests.test_negative_cost) ... ok\ntest_posterior_variance (test_examples.NextViewTests.test_posterior_variance) ... ok\ntest_quality_changes_selection (test_examples.NextViewTests.test_quality_changes_selection) ... ok\ntest_zero_validity (test_examples.NextViewTests.test_zero_validity) ... ok\ntest_apply_preserves_backup_and_fixes_link (test_importer.ImportTests.test_apply_preserves_backup_and_fixes_link) ... ok\ntest_checksum_mismatch_rejected (test_importer.ImportTests.test_checksum_mismatch_rejected) ... ok\ntest_default_apply_leaves_readme (test_importer.ImportTests.test_default_apply_leaves_readme) ... ok\ntest_dirty_checkout_rejected (test_importer.ImportTests.test_dirty_checkout_rejected) ... ok\ntest_dry_run_is_read_only (test_importer.ImportTests.test_dry_run_is_read_only) ... ok\ntest_existing_destination_rejected (test_importer.ImportTests.test_existing_destination_rejected) ... ok\ntest_path_traversal_rejected (test_importer.ImportTests.test_path_traversal_rejected) ... ok\ntest_upstream_origin_rejected (test_importer.ImportTests.test_upstream_origin_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 22 tests in 0.191s\n\nOK\n",
+  "post_review_recheck": {
+    "bundle_validation": {
+      "status": "pass",
+      "authored_files_verified": 25,
+      "local_markdown_links_checked": 77,
+      "method_entries": 13,
+      "source_entries": 29,
+      "manifest_covers_all_authored_files": true
+    },
+    "full_package_temporary_git_import": {
+      "status": "pass",
+      "payload_files_imported": 26,
+      "original_readme_backup_byte_exact": true,
+      "exact_maplab_link_correction": true,
+      "source_catalog_included": true
+    },
+    "primary_source_recheck": {
+      "source_records": 29,
+      "unique_github_repositories_checked": 21,
+      "recorded_git_blob_fingerprints_checked": 5,
+      "all_fingerprints_matched": true,
+      "all_source_destinations_resolved": true,
+      "external_framework_builds_run": false,
+      "hardware_or_flight_tests_run": false
+    },
+    "post_review_unit_tests": {
+      "passed": 22,
+      "failed": 0
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "experiment_id": null,
+  "status": "not_run",
+  "evidence_class": "template_only",
+  "source_claim_ids": [],
+  "repository_url": null,
+  "commit_sha": null,
+  "submodule_shas": {},
+  "hardware": {
+    "processor": null,
+    "board": null,
+    "flight_controller": null,
+    "sensors": [],
+    "sensing_compute_assembly_mass_g": null,
+    "power_measurement_boundary": null
+  },
+  "runtime": {
+    "os": null,
+    "toolchain": null,
+    "input_shape": null,
+    "quantization": null,
+    "operators_on_cpu": null,
+    "operators_on_accelerator": null
+  },
+  "metrics": {
+    "parameter_bytes": null,
+    "peak_ram_bytes": null,
+    "inference_p50_ms": null,
+    "inference_p99_ms": null,
+    "end_to_end_p50_ms": null,
+    "end_to_end_p99_ms": null,
+    "end_to_end_max_observed_ms": null,
+    "power_mean_w": null,
+    "power_peak_w": null,
+    "trials": null,
+    "successes": null,
+    "interventions": null,
+    "collisions": null,
+    "task_quality_metric_name": null,
+    "task_quality_value": null
+  },
+  "raw_log_locations": [],
+  "limitations": []
+}

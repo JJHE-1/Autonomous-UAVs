@@ -1,3 +1,10 @@
+<!-- nano-uav-learning-2026 -->
+## English navigation and nano-edge learning update
+
+[Open the learning guide](learning/nano-uav-2026/README.md). Includes a method matrix, source audit, learning exercises and experiment templates. This is documentation, not validated flight firmware.
+
+---
+
 # Autonomous UAVs
 List of open-source algorithms and resources for autonomous drones. The list is a work in progress, so some information may be wrong and lots of useful resources are still missing.
 
@@ -7,7 +14,7 @@ List of open-source algorithms and resources for autonomous drones. The list is 
 |:-------------|-------------|-------------|-------------|
 | [visual-slam-roadmap](https://github.com/changh95/visual-slam-roadmap)     |             | Great Roadmap for Visual SLAM                                                                                                  |      |
 | [voxblox](https://github.com/ethz-asl/voxblox)     | ETH            | voxel-based mapping                                                                                                  | :heavy_check_mark:     |
-| [maplab](https://github.com/ethz-asl/mav_voxblox_planning)      | ETH            | visual inertial mapping                                                                                              | :heavy_check_mark:       |
+| [maplab](https://github.com/ethz-asl/maplab)      | ETH            | visual inertial mapping                                                                                              | :heavy_check_mark:       |
 | [orb-slam2](https://github.com/raulmur/ORB_SLAM2)   |                | sparse 3D reconstruction                                                                                             | :heavy_check_mark:                  |
 | [open_vins](https://github.com/rpng/open_vins)   | U. of Delaware | EKF fuses inertial info with sparse visual features                                                                  | :heavy_check_mark: | https://github.com/rpng/open_vins                    |
 | [SVO 2.0](http://rpg.ifi.uzh.ch/svo2.html)     | ETH            | semi-direct paradigm to estimate pose from pixel intensities and features                                            | :heavy_check_mark:  | http://rpg.ifi.uzh.ch/svo2.html                      |
