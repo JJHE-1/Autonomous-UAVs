@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "release_date": "2026-10-08",
+  "hash_algorithm": "sha256",
+  "files": {
+    ".gitignore": "36d3a49bcd3b70be2ff209b5afef88013c7fcb9e4fb9d536d78b35b8f9a93cf8",
+    "AGENTS.md": "d47b53734b925f3a1ee1245b5387306d220749e5f335b025db0f58b0ac509514",
+    "CHANGELOG.md": "d6c95187567cca04dd1814f116f1d5938db6ca3ed2b21a3e5abb8e4395b58fe7",
+    "docs/00_start_here.md": "71d25fc54e8e265b351fcc76ff33c7dc0975c219ecb66e757939681b8916680a",
+    "docs/01_navigation_layers.md": "36ffc4a0cd2257ca1fce5fa6d739514ced2c463473da13a8db5c8e39cadc6465",
+    "docs/02_methods_and_edge_fit.md": "fa41adcf249c4a478f15c13bc80fda377a8d14f3af0a6ef0c8d693c87280d622",
+    "docs/03_learning_path.md": "bb8b3bac71dd09d9a8a6e4919834b5c17c313e09e79611373c818c84d1aee8fd",
+    "docs/04_experiment_protocol.md": "3082f35e0087af350590bfa35f6a53e7b0a122fab286fb17751bbecba119e0c3",
+    "docs/05_reading_indexes.md": "2272e7f145f451fc9caf86f1e0882ffb77867421acebc524ae7dba7c47e75a62",
+    "docs/06_upstream_corrections.md": "0c49493f8d2610e5136b3117c6cb2dcd7eb594e047625a925398b8b38ad73b99",
+    "examples/edge_budget.py": "3dc8a0fe2622149eca53ed70c6b6b903327600f58f4db31c22911ec2723a33be",
+    "examples/next_view.py": "c3e15538986b35c0a957a6373d43698c79a09d019a43742e2a1331b5c874bd42",
+    "import_into_repo.py": "574321b3b725141ebc261037ab0f9bfb701eb0c29d20a7e3c18c8edd8543bfad",
+    "NOTICE.md": "1efdf89c85e1877a609d3da8f744f1be7e1f9257a2bbd1b0483c75dee9453483",
+    "QA_RESULTS.json": "f0afd4fcfe5505f8ea38c9ba0dace072cf6d4ddcddebe9eed8e001ce9777728f",
+    "README.md": "0d0f56ab0a0a606c9eb672c8401dc5905f16df5a95aa35d7c55455f49c0b6ccc",
+    "REVIEW_STATUS.md": "75b7fcf2c5df3350ed6f01feff5d2e863277a1d88845dd4b4e08e5640a7a2bfe",
+    "sources/catalog.json": "452d1d0572ab1539567556d878411e0fd36f67c8aaefc9114bb4fda450ca6e78",
+    "sources/REFERENCES.md": "604acce8b88dc3c5f72a31ecf35c99b4f998dcad1beb0aba9d828b3a37e57796",
+    "templates/benchmark.json": "bab52ddb25dbee0aa273a30ea4a85bb4e9c6d8cbd2aa067f2db0cc4f5c71bfc2",
+    "templates/experiment_report.md": "b8c7c0b5c7117ac7fb52dc29505f7db11daf6eb456290f8276c61662fa378d31",
+    "tests/test_examples.py": "27d6189ed91c8138086daa063d6e84d367117ca31127ea8aaa9d122076fd763a",
+    "tests/test_importer.py": "bfb72b8de2a0e178e0822691940bc2c58f52774a3edf545fcc7e66ba6ee7a8a2",
+    "tools/validate_bundle.py": "e534d2eb683fe8b749a3da727f77cb4f71d3aaaffe78cadad86721ddcad2a1b1",
+    "UPLOAD.md": "0d7d0e733446e15b304c50d217e0fffce9ad0858abfb16384b0b47dc905258aa"
+  }
+}

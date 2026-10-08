@@ -1,0 +1,588 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-10-08",
+  "scope": "English learning update; editorial fit assessments are not hardware validation.",
+  "methods": [
+    {
+      "id": "tiny-pulp-dronet-v3",
+      "name": "Tiny-PULP-Dronet v3",
+      "repository": "pulp-platform/pulp-dronet",
+      "category": "reactive_visual_policy",
+      "resource_tier": "MCU",
+      "editorial_recommendation": "First GAP8/AI-deck learning baseline; mission navigation remains a separate problem.",
+      "source_ids": [
+        "S02",
+        "S03"
+      ],
+      "local_validation": "not_run",
+      "target_board_port_verified": false
+    },
+    {
+      "id": "diffphysdrone",
+      "name": "DiffPhysDrone",
+      "repository": "HenryHuYu/DiffPhysDrone",
+      "category": "differentiable_physics_policy",
+      "resource_tier": "MCU_port_candidate",
+      "editorial_recommendation": "Assess a small policy on NPU-equipped MCUs; not an established STM32N6 port.",
+      "source_ids": [
+        "S04",
+        "S05",
+        "S18"
+      ],
+      "local_validation": "not_run",
+      "target_board_port_verified": false
+    },
+    {
+      "id": "yopo",
+      "name": "YOPO",
+      "repository": "TJU-Aerial-Robotics/YOPO",
+      "category": "learned_trajectory_planning",
+      "resource_tier": "Linux_NPU",
+      "editorial_recommendation": "Evaluate on an RK-class companion computer before attempting MCU compression.",
+      "source_ids": [
+        "S06"
+      ],
+      "local_validation": "not_run",
+      "target_board_port_verified": false
+    },
+    {
+      "id": "openvins",
+      "name": "OpenVINS",
+      "repository": "rpng/open_vins",
+      "category": "state_estimation",
+      "resource_tier": "Linux_companion",
+      "editorial_recommendation": "Reference VIO baseline; do not infer MCU readiness from ROS-free support.",
+      "source_ids": [
+        "S07"
+      ],
+      "local_validation": "not_run",
+      "target_board_port_verified": false
+    },
+    {
+      "id": "ego-swarm",
+      "name": "EGO-Swarm",
+      "repository": "ZJU-FAST-Lab/ego-planner-swarm",
+      "category": "geometric_local_planning",
+      "resource_tier": "Linux_companion",
+      "editorial_recommendation": "Use a single-agent configuration as a modular reference.",
+      "source_ids": [
+        "S08"
+      ],
+      "local_validation": "not_run",
+      "target_board_port_verified": false
+    },
+    {
+      "id": "gcopter",
+      "name": "GCOPTER / MINCO",
+      "repository": "ZJU-FAST-Lab/GCOPTER",
+      "category": "trajectory_optimization",
+      "resource_tier": "Linux_reference",
+      "editorial_recommendation": "Study optimization and representation separately from sensing and control.",
+      "source_ids": [
+        "S09"
+      ],
+      "local_validation": "not_run",
+      "target_board_port_verified": false
+    },
+    {
+      "id": "fuel",
+      "name": "FUEL",
+      "repository": "HKUST-Aerial-Robotics/FUEL",
+      "category": "exploration",
+      "resource_tier": "Linux_reference",
+      "editorial_recommendation": "Compare environment coverage with task-specific measurement utility.",
+      "source_ids": [
+        "S10"
+      ],
+      "local_validation": "not_run",
+      "target_board_port_verified": false
+    },
+    {
+      "id": "navrl",
+      "name": "NavRL",
+      "repository": "Zhefan-Xu/NavRL",
+      "category": "reinforcement_learning_navigation",
+      "resource_tier": "Linux_companion",
+      "editorial_recommendation": "Research baseline; budget perception, tracking and safety modules, not only the actor.",
+      "source_ids": [
+        "S11",
+        "S12"
+      ],
+      "local_validation": "not_run",
+      "target_board_port_verified": false
+    },
+    {
+      "id": "super",
+      "name": "SUPER",
+      "repository": "hku-mars/SUPER",
+      "category": "safety_aware_navigation",
+      "resource_tier": "Linux_reference",
+      "editorial_recommendation": "Study safety planning; do not label the complete system MCU-ready.",
+      "source_ids": [
+        "S13"
+      ],
+      "local_validation": "not_run",
+      "target_board_port_verified": false
+    },
+    {
+      "id": "orb-slam3",
+      "name": "ORB-SLAM3",
+      "repository": "UZ-SLAMLab/ORB_SLAM3",
+      "category": "state_estimation_and_mapping",
+      "resource_tier": "Linux_reference",
+      "editorial_recommendation": "Useful SLAM comparison, not an out-of-box nano-MCU deployment.",
+      "source_ids": [
+        "S14"
+      ],
+      "local_validation": "not_run",
+      "target_board_port_verified": false
+    },
+    {
+      "id": "fast-livo2",
+      "name": "FAST-LIVO2",
+      "repository": "hku-mars/FAST-LIVO2",
+      "category": "multisensor_odometry",
+      "resource_tier": "LiDAR_companion",
+      "editorial_recommendation": "Use only after including LiDAR and the whole sensor/compute assembly in the budget.",
+      "source_ids": [
+        "S15"
+      ],
+      "local_validation": "not_run",
+      "target_board_port_verified": false
+    },
+    {
+      "id": "fly0",
+      "name": "Fly0",
+      "repository": "xuzhenxing1/Fly0",
+      "category": "semantic_task_navigation",
+      "resource_tier": "high_level_service",
+      "editorial_recommendation": "Borrow task/geometry separation; keep essential flight safety onboard.",
+      "source_ids": [
+        "S16"
+      ],
+      "local_validation": "not_run",
+      "target_board_port_verified": false
+    },
+    {
+      "id": "autofly",
+      "name": "AutoFly-VLA",
+      "repository": "xiaolousun/AutoFly-VLA",
+      "category": "vision_language_action",
+      "resource_tier": "research_watchlist",
+      "editorial_recommendation": "Track publication/release progress; not a self-contained nano deployment recipe.",
+      "source_ids": [
+        "S17"
+      ],
+      "local_validation": "not_run",
+      "target_board_port_verified": false
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "title": "Original Autonomous-UAVs index",
+      "url": "https://github.com/alexkoven/Autonomous-UAVs/blob/main/README.md",
+      "checked_on": "2026-10-08",
+      "review_scope": "Upstream categories and the incorrect maplab link; the original content is not redistributed in this bundle.",
+      "git_blob_sha": "904b4d8a532b5a852e46cd2450454b8d17bef3df",
+      "repository": "alexkoven/Autonomous-UAVs",
+      "path": "README.md",
+      "immutable_blob_api_url": "https://api.github.com/repos/alexkoven/Autonomous-UAVs/git/blobs/904b4d8a532b5a852e46cd2450454b8d17bef3df",
+      "evidence_kind": "source_file_read",
+      "external_build_tested": false,
+      "hardware_tested": false
+    },
+    {
+      "id": "S02",
+      "title": "PULP-Dronet project",
+      "url": "https://github.com/pulp-platform/pulp-dronet",
+      "checked_on": "2026-10-08",
+      "review_scope": "AI-deck/GAP8 platform and the v1/v2/v3 distinction.",
+      "git_blob_sha": null,
+      "repository": "pulp-platform/pulp-dronet",
+      "path": null,
+      "immutable_blob_api_url": null,
+      "evidence_kind": "primary_web_page_read",
+      "external_build_tested": false,
+      "hardware_tested": false
+    },
+    {
+      "id": "S03",
+      "title": "Tiny-PULP-Dronet v3 deployment guide",
+      "url": "https://github.com/pulp-platform/pulp-dronet/blob/master/tiny-pulp-dronet-v3/README.md",
+      "checked_on": "2026-10-08",
+      "review_scope": "Deployment layout, pretrained models, GAP SDK 3.9.1 and Crazyflie firmware tag 2022.01.",
+      "git_blob_sha": "41b7291037c61529c991e13189bb1e09032e1b02",
+      "repository": "pulp-platform/pulp-dronet",
+      "path": "tiny-pulp-dronet-v3/README.md",
+      "immutable_blob_api_url": "https://api.github.com/repos/pulp-platform/pulp-dronet/git/blobs/41b7291037c61529c991e13189bb1e09032e1b02",
+      "evidence_kind": "source_file_read",
+      "external_build_tested": false,
+      "hardware_tested": false
+    },
+    {
+      "id": "S04",
+      "title": "DiffPhysDrone author project page",
+      "url": "https://henryhuyu.github.io/DiffPhysDrone_Web/",
+      "checked_on": "2026-10-08",
+      "review_scope": "Differentiable-physics training and author-reported ARM-computer/depth-camera deployment.",
+      "git_blob_sha": null,
+      "repository": null,
+      "path": null,
+      "immutable_blob_api_url": null,
+      "evidence_kind": "primary_web_page_read",
+      "external_build_tested": false,
+      "hardware_tested": false
+    },
+    {
+      "id": "S05",
+      "title": "DiffPhysDrone model definition",
+      "url": "https://github.com/HenryHuYu/DiffPhysDrone/blob/master/model.py",
+      "checked_on": "2026-10-08",
+      "review_scope": "Default architecture dimensions used for an independent parameter-count calculation.",
+      "git_blob_sha": "1e6ed18b09d36ad5fbd5c3a831b4aef7067501f8",
+      "repository": "HenryHuYu/DiffPhysDrone",
+      "path": "model.py",
+      "immutable_blob_api_url": "https://api.github.com/repos/HenryHuYu/DiffPhysDrone/git/blobs/1e6ed18b09d36ad5fbd5c3a831b4aef7067501f8",
+      "evidence_kind": "source_file_read",
+      "external_build_tested": false,
+      "hardware_tested": false
+    },
+    {
+      "id": "S06",
+      "title": "YOPO deployment documentation",
+      "url": "https://github.com/TJU-Aerial-Robotics/YOPO/blob/YOPO-Simple/README.md",
+      "checked_on": "2026-10-08",
+      "review_scope": "Depth/odometry interface, author-reported RK3566 INT8 timing, pending RKNN deployment update and separate MINCO branch.",
+      "git_blob_sha": "2fc7c8867e7b56a0b6b48cee89dbda6feb996404",
+      "repository": "TJU-Aerial-Robotics/YOPO",
+      "path": "README.md",
+      "immutable_blob_api_url": "https://api.github.com/repos/TJU-Aerial-Robotics/YOPO/git/blobs/2fc7c8867e7b56a0b6b48cee89dbda6feb996404",
+      "evidence_kind": "source_file_read",
+      "external_build_tested": false,
+      "hardware_tested": false
+    },
+    {
+      "id": "S07",
+      "title": "OpenVINS",
+      "url": "https://github.com/rpng/open_vins",
+      "checked_on": "2026-10-08",
+      "review_scope": "Filter-based visual-inertial estimation and ROS-free build support.",
+      "git_blob_sha": null,
+      "repository": "rpng/open_vins",
+      "path": null,
+      "immutable_blob_api_url": null,
+      "evidence_kind": "primary_web_page_read",
+      "external_build_tested": false,
+      "hardware_tested": false
+    },
+    {
+      "id": "S08",
+      "title": "EGO-Swarm",
+      "url": "https://github.com/ZJU-FAST-Lab/ego-planner-swarm",
+      "checked_on": "2026-10-08",
+      "review_scope": "Trajectory planning, ROS2 branch, optional GPU sensor simulation and default fake-drone simulation.",
+      "git_blob_sha": null,
+      "repository": "ZJU-FAST-Lab/ego-planner-swarm",
+      "path": null,
+      "immutable_blob_api_url": null,
+      "evidence_kind": "primary_web_page_read",
+      "external_build_tested": false,
+      "hardware_tested": false
+    },
+    {
+      "id": "S09",
+      "title": "GCOPTER",
+      "url": "https://github.com/ZJU-FAST-Lab/GCOPTER",
+      "checked_on": "2026-10-08",
+      "review_scope": "Trajectory optimization and MINCO representation.",
+      "git_blob_sha": null,
+      "repository": "ZJU-FAST-Lab/GCOPTER",
+      "path": null,
+      "immutable_blob_api_url": null,
+      "evidence_kind": "primary_web_page_read",
+      "external_build_tested": false,
+      "hardware_tested": false
+    },
+    {
+      "id": "S10",
+      "title": "FUEL",
+      "url": "https://github.com/HKUST-Aerial-Robotics/FUEL",
+      "checked_on": "2026-10-08",
+      "review_scope": "Frontier-based exploration framework; a classic baseline, not a new 2026 method.",
+      "git_blob_sha": null,
+      "repository": "HKUST-Aerial-Robotics/FUEL",
+      "path": null,
+      "immutable_blob_api_url": null,
+      "evidence_kind": "primary_web_page_read",
+      "external_build_tested": false,
+      "hardware_tested": false
+    },
+    {
+      "id": "S11",
+      "title": "NavRL repository",
+      "url": "https://github.com/Zhefan-Xu/NavRL",
+      "checked_on": "2026-10-08",
+      "review_scope": "Deployment instructions, pinned Isaac Sim training environment, and different ROS1/ROS2 example platforms.",
+      "git_blob_sha": null,
+      "repository": "Zhefan-Xu/NavRL",
+      "path": null,
+      "immutable_blob_api_url": null,
+      "evidence_kind": "primary_web_page_read",
+      "external_build_tested": false,
+      "hardware_tested": false
+    },
+    {
+      "id": "S12",
+      "title": "NavRL paper, version 2",
+      "url": "https://arxiv.org/html/2409.15634v2",
+      "checked_on": "2026-10-08",
+      "review_scope": "PPO, safety layer and physical-test hardware in Section IV.",
+      "git_blob_sha": null,
+      "repository": null,
+      "path": null,
+      "immutable_blob_api_url": null,
+      "evidence_kind": "primary_web_page_read",
+      "external_build_tested": false,
+      "hardware_tested": false
+    },
+    {
+      "id": "S13",
+      "title": "SUPER",
+      "url": "https://github.com/hku-mars/SUPER",
+      "checked_on": "2026-10-08",
+      "review_scope": "Navigation/planning stack, ROS1 primary support and developing ROS2 implementation.",
+      "git_blob_sha": null,
+      "repository": "hku-mars/SUPER",
+      "path": null,
+      "immutable_blob_api_url": null,
+      "evidence_kind": "primary_web_page_read",
+      "external_build_tested": false,
+      "hardware_tested": false
+    },
+    {
+      "id": "S14",
+      "title": "ORB-SLAM3",
+      "url": "https://github.com/UZ-SLAMLab/ORB_SLAM3",
+      "checked_on": "2026-10-08",
+      "review_scope": "Visual/visual-inertial and multi-map SLAM implementation.",
+      "git_blob_sha": null,
+      "repository": "UZ-SLAMLab/ORB_SLAM3",
+      "path": null,
+      "immutable_blob_api_url": null,
+      "evidence_kind": "primary_web_page_read",
+      "external_build_tested": false,
+      "hardware_tested": false
+    },
+    {
+      "id": "S15",
+      "title": "FAST-LIVO2",
+      "url": "https://github.com/hku-mars/FAST-LIVO2",
+      "checked_on": "2026-10-08",
+      "review_scope": "LiDAR-inertial-visual odometry; LiDAR is part of this sensor configuration.",
+      "git_blob_sha": null,
+      "repository": "hku-mars/FAST-LIVO2",
+      "path": null,
+      "immutable_blob_api_url": null,
+      "evidence_kind": "primary_web_page_read",
+      "external_build_tested": false,
+      "hardware_tested": false
+    },
+    {
+      "id": "S16",
+      "title": "Fly0",
+      "url": "https://github.com/xuzhenxing1/Fly0",
+      "checked_on": "2026-10-08",
+      "review_scope": "Semantic grounding separated from geometric planning; model-service configuration.",
+      "git_blob_sha": null,
+      "repository": "xuzhenxing1/Fly0",
+      "path": null,
+      "immutable_blob_api_url": null,
+      "evidence_kind": "primary_web_page_read",
+      "external_build_tested": false,
+      "hardware_tested": false
+    },
+    {
+      "id": "S17",
+      "title": "AutoFly-VLA",
+      "url": "https://github.com/xiaolousun/AutoFly-VLA",
+      "checked_on": "2026-10-08",
+      "review_scope": "README lists planned training/evaluation modules and remote inference-server deployment.",
+      "git_blob_sha": null,
+      "repository": "xiaolousun/AutoFly-VLA",
+      "path": null,
+      "immutable_blob_api_url": null,
+      "evidence_kind": "primary_web_page_read",
+      "external_build_tested": false,
+      "hardware_tested": false
+    },
+    {
+      "id": "S18",
+      "title": "STM32N6 manufacturer documentation",
+      "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32n6-series.html",
+      "checked_on": "2026-10-08",
+      "review_scope": "4.2 Mbytes embedded RAM and distinction between AI and general-purpose device lines.",
+      "git_blob_sha": null,
+      "repository": null,
+      "path": null,
+      "immutable_blob_api_url": null,
+      "evidence_kind": "primary_web_page_read",
+      "external_build_tested": false,
+      "hardware_tested": false
+    },
+    {
+      "id": "S19",
+      "title": "PX4-Avoidance",
+      "url": "https://github.com/PX4/PX4-Avoidance",
+      "checked_on": "2026-10-08",
+      "review_scope": "Repository archived on 2024-08-01; README says it is not maintained.",
+      "git_blob_sha": null,
+      "repository": "PX4/PX4-Avoidance",
+      "path": null,
+      "immutable_blob_api_url": null,
+      "evidence_kind": "primary_web_page_read",
+      "external_build_tested": false,
+      "hardware_tested": false
+    },
+    {
+      "id": "S20",
+      "title": "maplab",
+      "url": "https://github.com/ethz-asl/maplab",
+      "checked_on": "2026-10-08",
+      "review_scope": "Correct destination for the upstream maplab entry.",
+      "git_blob_sha": null,
+      "repository": "ethz-asl/maplab",
+      "path": null,
+      "immutable_blob_api_url": null,
+      "evidence_kind": "primary_web_page_read",
+      "external_build_tested": false,
+      "hardware_tested": false
+    },
+    {
+      "id": "S21",
+      "title": "PX4 ROS2 offboard example",
+      "url": "https://docs.px4.io/main/en/ros2/offboard_control",
+      "checked_on": "2026-10-08",
+      "review_scope": "Official integration reference; select documentation matching the tested firmware.",
+      "git_blob_sha": null,
+      "repository": null,
+      "path": null,
+      "immutable_blob_api_url": null,
+      "evidence_kind": "primary_web_page_read",
+      "external_build_tested": false,
+      "hardware_tested": false
+    },
+    {
+      "id": "S22",
+      "title": "ArduPilot SITL documentation",
+      "url": "https://ardupilot.org/dev/docs/sitl-simulator-software-in-the-loop.html",
+      "checked_on": "2026-10-08",
+      "review_scope": "Official software-in-the-loop starting point.",
+      "git_blob_sha": null,
+      "repository": null,
+      "path": null,
+      "immutable_blob_api_url": null,
+      "evidence_kind": "primary_web_page_read",
+      "external_build_tested": false,
+      "hardware_tested": false
+    },
+    {
+      "id": "S23",
+      "title": "Elegant Aerial Robotics",
+      "url": "https://github.com/JaimeParker/elegant-aerial-robotics",
+      "checked_on": "2026-10-08",
+      "review_scope": "Broad aerial-robotics learning index; individual linked projects are not audited here.",
+      "git_blob_sha": null,
+      "repository": "JaimeParker/elegant-aerial-robotics",
+      "path": null,
+      "immutable_blob_api_url": null,
+      "evidence_kind": "primary_web_page_read",
+      "external_build_tested": false,
+      "hardware_tested": false
+    },
+    {
+      "id": "S24",
+      "title": "Awesome UAV-VLN",
+      "url": "https://github.com/earth-insights/awesome-uav-vln",
+      "checked_on": "2026-10-08",
+      "review_scope": "Vision-language-navigation reading index; not an executable flight stack.",
+      "git_blob_sha": null,
+      "repository": "earth-insights/awesome-uav-vln",
+      "path": null,
+      "immutable_blob_api_url": null,
+      "evidence_kind": "primary_web_page_read",
+      "external_build_tested": false,
+      "hardware_tested": false
+    },
+    {
+      "id": "S25",
+      "title": "Awesome VLA-UAVs",
+      "url": "https://github.com/TheBrainLab/Awesome-VLA-UAVs",
+      "checked_on": "2026-10-08",
+      "review_scope": "VLA/VLN reading index; not an executable flight stack.",
+      "git_blob_sha": null,
+      "repository": "TheBrainLab/Awesome-VLA-UAVs",
+      "path": null,
+      "immutable_blob_api_url": null,
+      "evidence_kind": "primary_web_page_read",
+      "external_build_tested": false,
+      "hardware_tested": false
+    },
+    {
+      "id": "S26",
+      "title": "Awesome RL for UAVs",
+      "url": "https://github.com/GongXudong/awesome-RL-for-UAVs",
+      "checked_on": "2026-10-08",
+      "review_scope": "Broad RL/control reading index; filter for the intended aircraft and task.",
+      "git_blob_sha": null,
+      "repository": "GongXudong/awesome-RL-for-UAVs",
+      "path": null,
+      "immutable_blob_api_url": null,
+      "evidence_kind": "primary_web_page_read",
+      "external_build_tested": false,
+      "hardware_tested": false
+    },
+    {
+      "id": "S27",
+      "title": "GitHub CLI fork reference",
+      "url": "https://cli.github.com/manual/gh_repo_fork",
+      "checked_on": "2026-10-08",
+      "review_scope": "User-run fork command options; this bundle does not execute an upload.",
+      "git_blob_sha": null,
+      "repository": null,
+      "path": null,
+      "immutable_blob_api_url": null,
+      "evidence_kind": "primary_web_page_read",
+      "external_build_tested": false,
+      "hardware_tested": false
+    },
+    {
+      "id": "S28",
+      "title": "GitHub CLI clone reference",
+      "url": "https://cli.github.com/manual/gh_repo_clone",
+      "checked_on": "2026-10-08",
+      "review_scope": "User-run clone workflow.",
+      "git_blob_sha": null,
+      "repository": null,
+      "path": null,
+      "immutable_blob_api_url": null,
+      "evidence_kind": "primary_web_page_read",
+      "external_build_tested": false,
+      "hardware_tested": false
+    },
+    {
+      "id": "S29",
+      "title": "Receding Horizon Next Best View Planner",
+      "url": "https://github.com/ethz-asl/nbvplanner/blob/master/README.md",
+      "checked_on": "2026-10-08",
+      "review_scope": "Official README describes a receding-horizon next-best-view exploration planner and lists ROS Indigo and Jade as tested.",
+      "git_blob_sha": "074428dac98d6d3e3c8636e8110c0a079c6f54c3",
+      "repository": "ethz-asl/nbvplanner",
+      "path": "README.md",
+      "immutable_blob_api_url": "https://api.github.com/repos/ethz-asl/nbvplanner/git/blobs/074428dac98d6d3e3c8636e8110c0a079c6f54c3",
+      "evidence_kind": "source_file_read",
+      "external_build_tested": false,
+      "hardware_tested": false
+    }
+  ]
+}
